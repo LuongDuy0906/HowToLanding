@@ -14,40 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1780828284
+  lastShownTimestamp: 1781187645
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1780828284
+  checkedLastUpdateTimestamp: 1781187645
   lastQOTDResponse:
-    questionId: 309
-    questionText: If you add the attribute [ExecuteInEditMode] to a MonoBehaviour
-      class, how often will Update be called?
-    answerA: Refresh rate of the monitor
-    answerB: When modifying something
-    answerC: Framerate shown in Game - Stats window
-    answerD: 
+    questionId: 311
+    questionText: Which namespace do we need to use File.WriteAllText()?
+    answerA: using System;
+    answerB: using UnityEngine;
+    answerC: using System.IO;
+    answerD: using UnityEngine.UI;
     answerE: 
-  lastQotdTimestamp: 1780828284
+  lastQotdTimestamp: 1781187645
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleJun26Synty.png
     topText: Synty is BACK with a HumbleBundle 95% OFF! Don't miss this one!
     topLink: humblebundle
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1780828284
+  lastDynamicHeaderTimestamp: 1781187645
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1780828284
+  websiteLatestMessageTimestamp: 1781187645
   websiteLatestVideos:
     videos:
+    - youTubeId: m0s3IUrWzVQ
+      title: How to Write High Quality Code that doesn't fall apart.
+    - youTubeId: NZfIxeK463o
+      title: Steam update just DESTROYED indie devs?!
     - youTubeId: AuT-paQSAHU
       title: NEW HOTTEST Steam Game Genres Revealed!
     - youTubeId: 7s7rmNeo8Wo
       title: Getting Started with Unity AI!
-    - youTubeId: PrTIDnZIlDM
-      title: What are Variables? (C# Basics for Beginners)
-    - youTubeId: -PPT43O48r4
-      title: The TERROR (and joy) of Pressing Publish on Steam!
-  websiteLatestVideosTimestamp: 1780828284
+  websiteLatestVideosTimestamp: 1781187645
