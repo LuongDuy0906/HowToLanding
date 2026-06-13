@@ -1,16 +1,35 @@
+using System;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StatsUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private TextMeshProUGUI statsTextMesh;
+    [SerializeField] private GameObject speedUpArrowGameObject;
+    [SerializeField] private GameObject speedDownArrowGameObject;
+    [SerializeField] private GameObject speedLeftArrowGameObject;
+    [SerializeField] private GameObject speedRightArrowGameObject;
+    [SerializeField] private Image fuelImage;
+
+    private void Update()
     {
-        
+        UpdateStatsTextMesh();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateStatsTextMesh()
     {
-        
-    }
+        speedUpArrowGameObject.SetActive(Lander.Instance.GetSpeedY() >= 0);
+        speedDownArrowGameObject.SetActive(Lander.Instance.GetSpeedY() < 0);
+        speedLeftArrowGameObject.SetActive(Lander.Instance.GetSpeedX() < 0);
+        speedRightArrowGameObject.SetActive(Lander.Instance.GetSpeedX() >= 0);
+
+        fuelImage.fillAmount = Lander.Instance.GetFuelAmountNormalized();
+
+        statsTextMesh.text = GameManager.Instance.GetScore() + "\n"
+            + Mathf.Round(GameManager.Instance.GetTime()) + "\n"
+            + Mathf.Abs(Mathf.Round(Lander.Instance.GetSpeedX() * 10f)) + "\n"
+            + Mathf.Abs(Mathf.Round(Lander.Instance.GetSpeedY() * 10f));
+    } 
 }
