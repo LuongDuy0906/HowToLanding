@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     private int score;
     private float time;
+    private bool isTimerActive;
 
     private void Awake()
     {
@@ -18,11 +19,15 @@ public class GameManager : MonoBehaviour
     {
         Lander.Instance.OnCoinPickup += Lander_OnCoinPickup;
         Lander.Instance.OnLanded += Lander_OnLanded;
+        Lander.Instance.OnStateChange += Lander_OnStateChange;
     }
 
     private void Update()
     {
-        time += Time.deltaTime;
+        if (isTimerActive)
+        {
+            time += Time.deltaTime;
+        }
     }
 
     private void Lander_OnLanded(object sender, Lander.OnLandedEventArgs e)
@@ -33,6 +38,10 @@ public class GameManager : MonoBehaviour
     private void Lander_OnCoinPickup(object sender, EventArgs e)
     {
         AddScore(50);
+    }
+    private void Lander_OnStateChange(object sender, Lander.OnStateChangeEventArgs e)
+    {
+        isTimerActive = e.state == Lander.State.Normal;
     }
 
     public void AddScore(int addScoreAmount)
