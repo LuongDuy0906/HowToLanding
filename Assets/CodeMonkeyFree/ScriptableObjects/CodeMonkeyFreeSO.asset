@@ -14,39 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1781404221
+  lastShownTimestamp: 1783127409
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1781404221
+  checkedLastUpdateTimestamp: 1783127409
   lastQOTDResponse:
-    questionId: 311
-    questionText: Which namespace do we need to use File.WriteAllText()?
-    answerA: using System;
-    answerB: using UnityEngine;
-    answerC: using System.IO;
-    answerD: using UnityEngine.UI;
+    questionId: 318
+    questionText: 'Is this valid code?
+
+      <p>Vector3? targetPosition = new Vector3(10,
+      0, 0);</p>
+
+      <p>Vector3 moveToPosition = targetPosition;</p>'
+    answerA: Yes
+    answerB: No
+    answerC: 
+    answerD: 
     answerE: 
-  lastQotdTimestamp: 1781404221
+  lastQotdTimestamp: 1783127409
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleJun26Synty.png
-    topText: Synty is BACK with a HumbleBundle 95% OFF! Don't miss this one!
-    topLink: humblebundle
-    bottomText: My 10+ Years of C# Knowledge in 1 Course!
-    bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1781404221
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle.png
+    topText: Get 80% OFF on ALL my Courses and Games!!!
+    topLink: summerbundle
+    bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
+      Newsletter!
+    bottomLink: gamedevreport
+  lastDynamicHeaderTimestamp: 1783127409
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1781404221
+  websiteLatestMessageTimestamp: 1783127409
   websiteLatestVideos:
     videos:
-    - youTubeId: NYBe2xkcscA
-      title: Unity Summer Sale is live up to 90% OFF!
-    - youTubeId: m0s3IUrWzVQ
-      title: How to Write High Quality Code that doesn't fall apart.
-    - youTubeId: NZfIxeK463o
-      title: Steam update just DESTROYED indie devs?!
-    - youTubeId: AuT-paQSAHU
-      title: NEW HOTTEST Steam Game Genres Revealed!
-  websiteLatestVideosTimestamp: 1781404221
+    - youTubeId: ngQCio7raFY
+      title: Apparently Indie devs are NOT dead?
+    - youTubeId: C9iHZDlnXdk
+      title: BEST NEW Visual Assets to INSPIRE YOU! (APRIL 2026)
+    - youTubeId: v2E2OkAYjs4
+      title: How to make $50 MILLION Indie Game (MECCHA CHAMELEON)
+    - youTubeId: YMZSa1CzQGk
+      title: TOP 10 NEW Systems and Tools JUNE 2026! | Unity Asset Store
+  websiteLatestVideosTimestamp: 1783127409
