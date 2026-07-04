@@ -376,6 +376,37 @@ PolygonCollider2D:
       - {x: 12.594939, y: -10.267246}
       - {x: 3.4975357, y: -10.078159}
   m_UseDelaunayMesh: 1
+--- !u!1 &330781098848720272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5703504724374377785}
+  m_Layer: 0
+  m_Name: CameraStartTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5703504724374377785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330781098848720272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.75, y: -2.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2303964288747096582}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6697399269517902246
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +475,7 @@ Transform:
   - {fileID: 4903216082771150475}
   - {fileID: 6596504755660052842}
   - {fileID: 5210146845439970546}
+  - {fileID: 5703504724374377785}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1345583506091543043
@@ -460,6 +492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameLevel
   levelNumber: 1
   landerStartPositionTransform: {fileID: 5210146845439970546}
+  cameraStartTargetTransform: {fileID: 5703504724374377785}
+  zoomedOutOrthographicSize: 12
 --- !u!1001 &1159793465773239320
 PrefabInstance:
   m_ObjectHideFlags: 0
