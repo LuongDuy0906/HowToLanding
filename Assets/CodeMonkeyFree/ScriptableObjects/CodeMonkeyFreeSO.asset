@@ -14,25 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1783127409
+  lastShownTimestamp: 1783847180
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1783127409
+  checkedLastUpdateTimestamp: 1783847180
   lastQOTDResponse:
-    questionId: 318
-    questionText: 'Is this valid code?
-
-      <p>Vector3? targetPosition = new Vector3(10,
-      0, 0);</p>
-
-      <p>Vector3 moveToPosition = targetPosition;</p>'
+    questionId: 321
+    questionText: When you create a new script, do you always have to extend MonoBehaviour?
     answerA: Yes
     answerB: No
-    answerC: 
+    answerC: Only if you want to use it as a Game Object Component
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1783127409
+  lastQotdTimestamp: 1783847180
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle.png
     topText: Get 80% OFF on ALL my Courses and Games!!!
@@ -40,19 +35,19 @@ MonoBehaviour:
     bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
       Newsletter!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1783127409
+  lastDynamicHeaderTimestamp: 1783847180
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1783127409
+  websiteLatestMessageTimestamp: 1783847180
   websiteLatestVideos:
     videos:
+    - youTubeId: zkKU7Vj5Syc
+      title: Do THIS to pick your next SUCCESSFUL game idea!
+    - youTubeId: NjNbIHHu9Z0
+      title: Steam Marketing EXPERT on how to find SUCCESS in 2026!
     - youTubeId: ngQCio7raFY
       title: Apparently Indie devs are NOT dead?
     - youTubeId: C9iHZDlnXdk
       title: BEST NEW Visual Assets to INSPIRE YOU! (APRIL 2026)
-    - youTubeId: v2E2OkAYjs4
-      title: How to make $50 MILLION Indie Game (MECCHA CHAMELEON)
-    - youTubeId: YMZSa1CzQGk
-      title: TOP 10 NEW Systems and Tools JUNE 2026! | Unity Asset Store
-  websiteLatestVideosTimestamp: 1783127409
+  websiteLatestVideosTimestamp: 1783847180
