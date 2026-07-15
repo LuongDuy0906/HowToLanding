@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get ; private set; }
+    public static GameManager Instance { get; private set; }
 
     private static int levelNumber = 1;
+
+    public event EventHandler OnGamePaused;
+    public event EventHandler OnGameUnPause;
 
     [SerializeField] private List<GameLevel> gameLevelList;
     [SerializeField] private CinemachineCamera cinemachineCamera;
@@ -29,7 +32,13 @@ public class GameManager : MonoBehaviour
         Lander.Instance.OnLanded += Lander_OnLanded;
         Lander.Instance.OnStateChange += Lander_OnStateChange;
 
+        GameInput.Instance.OnMenuButtonPressed += GameInput_OnMenuButtonPressed;
         LoadCurrentLevel();
+    }
+
+    private void GameInput_OnMenuButtonPressed(object sender, EventArgs e)
+    {
+        PauseUnPauseGame();
     }
 
     private void Update()
@@ -44,7 +53,7 @@ public class GameManager : MonoBehaviour
     {
         foreach (GameLevel level in gameLevelList)
         {
-            if(level.GetLevelNumber() == levelNumber)
+            if (level.GetLevelNumber() == levelNumber)
             {
                 GameLevel spawnGameLevel = Instantiate(level, Vector3.zero, Quaternion.identity);
                 Lander.Instance.transform.position = spawnGameLevel.GetLanderStartPosition();
@@ -67,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         isTimerActive = e.state == Lander.State.Normal;
 
-        if(e.state == Lander.State.Normal)
+        if (e.state == Lander.State.Normal)
         {
             cinemachineCamera.Target.TrackingTarget = Lander.Instance.transform;
             CinemachineZoom2D.Instance.SetNormalOrthographicSize();
@@ -98,11 +107,35 @@ public class GameManager : MonoBehaviour
     public void GoToNextLevel()
     {
         levelNumber++;
-        SceneManager.LoadScene(0);
+        SceneLoader.LoadScene(SceneLoader.Scene.GameScene);
     }
 
     public void RetryThisLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneLoader.LoadScene(SceneLoader.Scene.GameScene);
+    }
+
+    public void PauseUnPauseGame()
+    {
+        if(Time.timeScale == 1f)
+        {
+            PauseGame();
+        }
+        else
+        {
+            UnPauseGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        OnGamePaused?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void UnPauseGame()
+    {
+        Time.timeScale = 1f;
+        OnGameUnPause?.Invoke(this, EventArgs.Empty);
     }
 }
