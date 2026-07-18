@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1784125845
+  lastShownTimestamp: 1784362242
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1784125845
+  checkedLastUpdateTimestamp: 1784362242
   lastQOTDResponse:
-    questionId: 322
-    questionText: What is the purpose of a namespace?
-    answerA: To confuse you
-    answerB: Better performance
-    answerC: Keep your code organized
+    questionId: 323
+    questionText: What is the purpose of using Time.deltaTime?
+    answerA: Random movement
+    answerB: Faster performance
+    answerC: Framerate independence
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1784125845
+  lastQotdTimestamp: 1784362242
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle.png
     topText: Get 80% OFF on ALL my Courses and Games!!!
@@ -35,11 +35,11 @@ MonoBehaviour:
     bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
       Newsletter!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1784125845
+  lastDynamicHeaderTimestamp: 1784362242
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1784125845
+  websiteLatestMessageTimestamp: 1784362242
   websiteLatestVideos:
     videos:
     - youTubeId: IQlMciGDMTY
@@ -50,4 +50,4 @@ MonoBehaviour:
       title: Steam Marketing EXPERT on how to find SUCCESS in 2026!
     - youTubeId: ngQCio7raFY
       title: Apparently Indie devs are NOT dead?
-  websiteLatestVideosTimestamp: 1784125845
+  websiteLatestVideosTimestamp: 1784362242

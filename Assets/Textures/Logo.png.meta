@@ -9,7 +9,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -103,10 +103,10 @@ TextureImporter:
       name: Logo_0
       rect:
         serializedVersion: 2
-        x: 412
-        y: 265
-        width: 1520
-        height: 891
+        x: 117
+        y: 70
+        width: 436
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
